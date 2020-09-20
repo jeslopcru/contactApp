@@ -6,7 +6,7 @@ describe 'Contacts', type: :request do
   describe 'POST /contacts' do
     let(:email) { Faker::Internet.unique.email }
     let(:first_name) { Faker::Books::Dune.character }
-    let(:second_name) { Faker::Books::Dune.character }
+    let(:last_name) { Faker::Books::Dune.character }
     let(:phone) { Faker::PhoneNumber.cell_phone_in_e164 }
 
     context 'when the request is valid' do
@@ -14,7 +14,7 @@ describe 'Contacts', type: :request do
         {
             email: email,
             first_name: first_name,
-            second_name: second_name,
+            last_name: last_name,
             phone: phone
         }
       end
@@ -24,7 +24,7 @@ describe 'Contacts', type: :request do
       it 'creates a new contact' do
         expect(json['email']).to eq email
         expect(json['first_name']).to eq first_name
-        expect(json['second_name']).to eq second_name
+        expect(json['last_name']).to eq last_name
         expect(json['phone']).to eq phone
       end
 
@@ -36,7 +36,7 @@ describe 'Contacts', type: :request do
         {
             email: email,
             first_name: first_name,
-            second_name: second_name
+            last_name: last_name
         }
       end
 
@@ -53,7 +53,7 @@ describe 'Contacts', type: :request do
         {
             email: email,
             first_name: first_name,
-            second_name: second_name,
+            last_name: last_name,
             phone: phone
         }
       end

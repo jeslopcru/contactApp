@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
     "id": 20,
     "email": "cesar_mitchell@stanton-monahan.co",
     "first_name": "Thufir Hawat",
-    "second_name": "Miles Teg",
+    "last_name": "Miles Teg",
     "phone": "+5954371843152",
     "created_at": "2020-09-20T08:07:22.177Z",
     "updated_at": "2020-09-20T08:07:22.177Z"
@@ -81,7 +81,7 @@ HTTP/1.1 200 OK
   "id": 1,
   "email": "becki_bergnaum@rosenbaum-rath.biz",
   "first_name": "Edric",
-  "second_name": "Otheym",
+  "last_name": "Otheym",
   "phone": "+2552603108299",
   "created_at": "2020-09-20T08:07:21.860Z",
   "updated_at": "2020-09-20T08:07:21.860Z"
@@ -97,7 +97,7 @@ Content-Type: application/json
 {
   "email": "becki_bergnaum@rosenbaum-rath.biz",
   "first_name": "Edric",
-  "second_name": "Otheym",
+  "last_name": "Otheym",
   "phone": "+2552603108299"
 }
 ````
@@ -109,7 +109,7 @@ HTTP/1.1 201 Created
   "id": 21,
   "email": "kkskksks@rosenbaum-rath.biz",
   "first_name": "Edric",
-  "second_name": "Otheym",
+  "last_name": "Otheym",
   "phone": "+2552603108299",
   "created_at": "2020-09-20T08:57:24.550Z",
   "updated_at": "2020-09-20T08:57:24.550Z"
@@ -124,7 +124,7 @@ Content-Type: application/json
 {
   "email": "manolo.sanchez@rosenbaum-rath.biz",
   "first_name": "Manolo",
-  "second_name": "Sanchez",
+  "last_name": "Sanchez",
   "phone": "+2552603108299"
 }
 ````

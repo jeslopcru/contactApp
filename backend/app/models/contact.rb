@@ -2,5 +2,5 @@
 
 class Contact < ApplicationRecord
   validates :email, uniqueness: true
-  validates :email, :first_name, :second_name, :phone, presence: true
+  validates :email, :first_name, :last_name, :phone, presence: true
 end
