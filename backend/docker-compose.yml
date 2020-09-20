@@ -12,7 +12,7 @@ services:
     image: skygvinn/alpine-ruby2.7.0-nodejs:v1.0
     container_name: contact_list
     ports:
-      - "3000:3000"
+      - 3000:3000
     environment:
       - BUNDLE_PATH=vendor/bundle
       - BUNDLE_DISABLE_SHARED_GEMS=1
@@ -20,7 +20,7 @@ services:
     volumes:
       - .:/var/www/contact_list:Z
     working_dir: /var/www/contact_list
-    command: bundle exec rails s -b 0.0.0.0
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     depends_on:
       - db
   adminer:
