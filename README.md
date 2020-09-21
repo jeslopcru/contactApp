@@ -3,7 +3,7 @@
 ## Introduction
 
 > This repository is home to the code examples. They are designed solely for the purpose of learning a new language. 
-backend is an api written in Rails + Postgres + Docker.
+Backend is an api written in Rails + Postgres + Docker. Frontend is written in React
 
 ## Technical Information and dependencies
 - The Ruby language - version 2.7.0
