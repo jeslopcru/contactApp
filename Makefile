@@ -13,3 +13,7 @@ backend-test: ## Run backend test
 	cd backend && script/test
 backend-clean: ## Down backend docker compose
 	cd backend && script/clean
+frontend-up: ## Down start docker compose
+	cd frontend && docker-compose up --build
+frontend-stop: ## Down stop docker compose
+	cd frontend && docker-compose stop
