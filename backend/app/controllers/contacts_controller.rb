@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
   def update
     contact.update(contact_params)
 
-    head :no_content
+    json_response @contact
   end
 
   # DELETE /contacts/:id
@@ -37,7 +37,7 @@ class ContactsController < ApplicationController
   attr_accessor :contact
 
   def contact_params
-    params.permit(:email, :first_name, :last_name, :phone)
+    params.require(:contact).permit(:email, :first_name, :last_name, :phone)
   end
 
   def set_contact
