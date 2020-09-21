@@ -3,13 +3,13 @@ help: ## Prints this help.
 
 current-dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-setup: ## setup environment
+backend-setup: ## setup backend environment
 	cd backend && script/setup
-server: ## Start all docker-compose
+backend-server: ## Start backend docker-compose
 	cd backend && script/server
-bash: ## Run bash in docker server
+backend-bash: ## Run bash in docker server
 	cd backend && script/bash
-test: ## Run test
+backend-test: ## Run backend test
 	cd backend && script/test
-clean: ## Down all docker compose
+backend-clean: ## Down backend docker compose
 	cd backend && script/clean

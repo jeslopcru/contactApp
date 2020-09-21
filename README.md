@@ -20,11 +20,11 @@ git clone https://github.com/jeslopcru/contactApp.git
 cd contactApp
 ```
 
-### To run 
-We have some scripts to automatize in backend/script.
-
-
+## How to run 
+We have some scripts to automatize 
+### backend 
 ```shell script
+$ cd backend
 $ script/setup    # => development bootstrap, preparing containers
 $ script/server   # => starts server
 $ script/bash   # => starts bash inside container
@@ -37,12 +37,24 @@ or you can use Makefile
 ```shell script
 ╰─$ make
 help                 Prints this help.
-setup                setup environment
-server               Start all docker-compose
-bash                 Run bash in docker server
-test                 Run test
-clean                Down all docker compose
+backend-setup        setup backend environment
+backend-server       Start backend docker-compose
+backend-bash         Run bash in docker server
+backend-test         Run backend test
+backend-clean        Down backend docker compose
 ```
+
+### frontend
+```shell script
+$ cd frontend
+$ docker-compose up -d --build # => setup and run
+$ docker-compose stop # => Stop
+$ docker-compose run frontend test # => run test
+```
+
+## Frontend
+
+[http://localhost:3001](http://localhost:3001)
 
 ## Api Documentation
 
