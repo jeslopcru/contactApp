@@ -143,7 +143,17 @@ Content-Type: application/json
 
 Response
 ```http request
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+
+{
+  "id": 2,
+  "email": "manolo.sanchez@rosenbaum-rath.biz",
+  "first_name": "Manolo",
+  "last_name": "Sanchez",
+  "phone": "+2552603108299",
+  "created_at": "2020-09-20T17:11:36.647Z",
+  "updated_at": "2020-09-20T17:11:36.647Z"
+}
 ```
 
 - Delete
